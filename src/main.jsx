@@ -67,7 +67,7 @@ function Icon({ name, size = 20 }) {
 
 function Logo({ compact = false }) {
   return <div className={`brand ${compact ? 'compact' : ''}`} aria-label="Mickey's">
-    <img src="/mickeys-logo.svg" alt="Mickey's" />
+    <img src={`${import.meta.env.BASE_URL}mickeys-logo.svg`} alt="Mickey's" />
   </div>;
 }
 
